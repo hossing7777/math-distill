@@ -32,8 +32,7 @@ jobs:
 
     - name: Re-save notebook
       run: |
-        jupyter nbconvert --to notebook math_distill_colab.ipynb \
-          --output executed_notebook.ipynb
+        jupyter nbconvert --to notebook math_distill_colab.ipynb --output executed_notebook.ipynb
 
     - name: Upload notebook
       uses: actions/upload-artifact@v4
